@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Google Maps scraper"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jScrollPane1" pref="550" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jTextFieldStartTime" max="32767" attributes="0"/>
+                                          <Component id="jTextFieldFinishTime" pref="200" max="32767" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jButtonStart" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jButtonStart" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="303" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextFieldStartTime" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextFieldFinishTime" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="jButtonStart">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="99" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Start"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonStartActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Locations:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextAreaLocations">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Ashaway, Rhode Island|41.4275657,-71.8008861&#xa;Belleville, Rhode Island|41.5540052,-71.4789688&#xa;Bradford, Rhode Island|41.3932494,-71.774126&#xa;Carolina, Rhode Island|41.4639189,-71.6799695&#xa;Centerdale, Rhode Island|41.8558799,-71.4892502&#xa;Central Falls, Rhode Island|41.890468,-71.4040507&#xa;Charlestown, Rhode Island|41.3696679,-71.7455968&#xa;Chepachet, Rhode Island|41.90978,-71.6828495&#xa;Clayville, Rhode Island|41.77334,-71.6974752&#xa;Coventry, Rhode Island|41.6937753,-71.7436808&#xa;Cranston, Rhode Island|41.7686911,-71.5093434&#xa;Cumberland Hill, Rhode Island|41.9715386,-71.484416&#xa;East Providence, Rhode Island|41.79858,-71.4389659&#xa;Esmond, Rhode Island|41.872278,-71.5045995&#xa;Foster Center, Rhode Island|41.7887584,-71.7721244&#xa;Georgiaville, Rhode Island|41.8870586,-71.5186941&#xa;Greene, Rhode Island|41.6971277,-71.751244&#xa;Greenville, Rhode Island|41.8868031,-71.5759155&#xa;Harmony, Rhode Island|41.8994182,-71.6254775&#xa;Harrisville, Rhode Island|41.9710405,-71.6893038&#xa;Hope Valley, Rhode Island|41.5100207,-71.737197&#xa;Hopkinton, Rhode Island|41.4704342,-71.8276923&#xa;Kingston, Rhode Island|41.4729078,-71.5437504&#xa;Manville, Rhode Island|41.9674415,-71.4844078&#xa;Melville, Rhode Island|41.5573898,-71.3378945&#xa;Misquamicut, Rhode Island|41.3237097,-71.8298238&#xa;Narragansett Pier, Rhode Island|41.4276283,-71.4875396&#xa;Newport, Rhode Island|41.4861444,-71.3658694&#xa;North Foster, Rhode Island|41.8315028,-71.7609245&#xa;Pascoag, Rhode Island|41.9537531,-71.7251875&#xa;Pawtucket, Rhode Island|41.8776272,-71.3985696&#xa;Providence, Rhode Island|41.8171626,-71.4622849&#xa;Quonochontaug, Rhode Island|41.3355091,-71.7169425&#xa;Saunderstown, Rhode Island|41.5087978,-71.4288415&#xa;Tiverton, Rhode Island|41.6170499,-71.2588428&#xa;Union Village, Rhode Island|41.9912243,-71.5495287&#xa;Valley Falls, Rhode Island|41.9215765,-71.417628&#xa;Wakefield, Rhode Island|41.4403824,-71.5035423&#xa;Warwick, Rhode Island|41.6989637,-71.5046903&#xa;Washington, Rhode Island|41.375438,-71.9735348&#xa;Watch Hill, Rhode Island|41.3141042,-71.8600263&#xa;Weekapaug, Rhode Island|41.3309955,-71.7653051&#xa;West Kingston, Rhode Island|41.4866992,-71.5687825&#xa;Westerly, Rhode Island|41.3021136,-71.9006432&#xa;Woonsocket, Rhode Island|41.9984716,-71.5197095&#xa;Wyoming, Rhode Island|41.514772,-71.7005427"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="jTextFieldStartTime">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldFinishTime">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Start time:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Finish time:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
