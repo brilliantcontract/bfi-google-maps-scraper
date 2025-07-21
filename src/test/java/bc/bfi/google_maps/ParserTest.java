@@ -13,7 +13,9 @@ public class ParserTest {
     @Test
     public void test() throws IOException {
         Parser parser = new Parser();
-        String jsonString = new String(Files.readAllBytes(Paths.get("serper-response.json")), StandardCharsets.UTF_8);
+        String jsonString = "{\n" +
+                "  \"places\": [ { \"title\": \"Test\", \"address\": \"Addr\", \"position\": 1 } ]\n" +
+                "}";
         List<Place> places = parser.parse(jsonString, "churches in Rhode Island");
 
         for (Place place : places) {
