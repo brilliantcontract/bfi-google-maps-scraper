@@ -133,8 +133,13 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonStartActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+        jButtonProcessJsonAndGenerateCsvActionPerformed(evt);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButtonProcessJsonAndGenerateCsvActionPerformed(java.awt.event.ActionEvent evt) {
+        JsonToCsvProcessor processor = new JsonToCsvProcessor();
+        processor.process();
+    }
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
